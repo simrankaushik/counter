@@ -1,0 +1,37 @@
+
+
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow:  rgba(0, 0, 0, 0.35) 0px 5px 15px;;
+    text-align: center;
+    height:80%;
+    cursor: pointer;
+
+    
+}
+
+.counter-container .text-container p{
+    font-size: 2.5em;
+    
+}
+
+.counter-container .count{
+    font-size: 4.5em;
+}
+
+.counter-container .image-container i{
+    font-size: 7em;
+    color: #00B5E2;
+    border-radius: 10px;
+}
+
+.para-container p{
+    font-size: 2.5em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color:crimson;
+    font-weight: 600;
+}

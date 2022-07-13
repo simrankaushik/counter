@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="counter-container" id="counter" onclick="start()">
+        <div class="image-container">
+            <i class="fa fa-twitter-square"></i>
+        </div>
+        <div class="count" id="mycount">0</div>
+        <div class="text-container">
+            <p>Twitter Followers</p>
+        </div>
+    </div>
+    <div class="para-container">
+        <p>Click anywhere above !!</p>
+    </div>
+
+    <script type="text/javascript">
+        var count=0;
+        var fcount;
+        function start(){
+            const myInterval=setInterval(update_count,10);
+        }
+        
+        function update_count(){
+            count = count+1;
+            if(count>100){
+                clearInterval(myInterval);
+            }
+            document.getElementById("mycount").innerHTML = count;
+                    
+        }
+    </script>
+    
+</body>
+</html>
